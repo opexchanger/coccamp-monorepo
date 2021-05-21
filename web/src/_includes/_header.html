@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <img
+        src="../img/coccamp-logo.jpeg"
+        alt="Logo Coccamp"
+        class="logo__img"
+      />
+    </a>
+
+    <button id="open" aria-label="Open Navigation" class="header__hamb">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar pro MOBILE-->
+    {% include _mobile-navbar.njk %}
+
+    <!-- Navbar pro DESKTOP-->
+    {% include _desktop-navbar.njk %}
+  </div>
+</header>

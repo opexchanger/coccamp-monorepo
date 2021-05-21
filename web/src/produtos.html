@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts-->
+    {% include _gfont.html %}
+
+    <!-- Font-awesome-->
+    {% include _fa.html %}
+
+    <!-- AOS-->
+    {% include _aos.html %}
+
+    <!-- Swiper-->
+    {% include _swiper.html %}
+
+    <!-- Css da casa-->
+    {% include _css.html %}
+
+    <title>Coccamp | Our coffees</title>
+  </head>
+
+  <body>
+    <!-- Header-->
+    {% include _header.html %}
+
+    <main class="main">
+      <section class="hero hero--products">
+        <div class="container">
+          <h1 class="hero__title">{{ productsPage.heroText.title }}</h1>
+          <p class="hero__subtitle">{{ productsPage.heroText.subtitle }}</p>
+        </div>
+        <div class="hero__chevron">
+          <a href="#first-section">
+            <img src="../img/header-chevron-bottom.png" alt="Scroll Down"
+          /></a>
+        </div>
+      </section>
+
+      <section id="first-section" class="section">
+        <div class="container container--large">
+          <div class="product-row">
+            <h2 class="products__title">Roasted Coffee</h2>
+            <p class="product-row__text body-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              tempore illo explicabo possimus itaque porro fuga cum voluptatum?
+            </p>
+            <!-- Slider main container -->
+            <div class="swiper-container" id="swiper-products">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-left"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe A</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-right"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe B</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-left"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe C</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination swiper-pag-products"></div>
+            </div>
+          </div>
+          <div class="product-row">
+            <h2 class="products__title">Roasted Coffee</h2>
+            <p class="product-row__text body-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              tempore illo explicabo possimus itaque porro fuga cum voluptatum?
+            </p>
+            <!-- Slider main container -->
+            <div class="swiper-container" id="swiper-products">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-left"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe A</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-right"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe B</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide swiper-slide-products"
+                  data-aos="flip-left"
+                >
+                  <div class="product-box">
+                    <div class="product-box__head">
+                      <img src="../img/coffee.png" alt="Coffee" />
+                    </div>
+                    <div class="product-box__body">
+                      <img
+                        class="product-box__stars"
+                        src="../img/stars.png"
+                        alt="Coffe Rating"
+                      />
+                      <h3 class="product-box__name">Roasted Coffe C</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination swiper-pag-products"></div>
+            </div>
+          </div>
+          <h4 class="products__h4">{{ productsPage.textCta }}</h4>
+          <a href="/contato/#form-section" class="button btn-products"
+            >{{ productsPage.textPartner }}</a
+          >
+          <a href="/contato/#form-section" class="button"
+            >{{ productsPage.textClient }}</a
+          >
+        </div>
+      </section>
+
+      <!-- Brand logos-->
+      {% include _brands.html %}
+
+      <!-- Footer-->
+      {% include _footer.html %}
+    </main>
+
+    <!-- Animation on Scroll-->
+    {% include _aos-init.html %}
+
+    <!-- Swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiperProducts = new Swiper("#swiper-products", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: true,
+        centeredSlides: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- JS da casa-->
+    {% include _js.html %}
+  </body>
+</html>

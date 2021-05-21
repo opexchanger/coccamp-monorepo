@@ -1,0 +1,23 @@
+<nav id="nav" class="nav" aria-label="Mobile Navigation">
+  <button
+    id="close"
+    aria-label="Close Navigation"
+    class="nav__btn-close"
+  >
+    <i class="fas fa-times"></i>
+  </button>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="/" class="nav__link {% if page.url == '/' %}nav__link--active{% endif %}">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="/quem-somos" class="nav__link {% if page.url == '/quem-somos/' %}nav__link--active{% endif %}">Who We Are</a>
+    </li>
+    <li class="nav__item">
+      <a href="/produtos" class="nav__link {% if page.url == '/produtos/' %}nav__link--active{% endif %}">Coffees</a>
+    </li>
+    <li class="nav__item">
+      <a href="/contato" class="nav__link {% if page.url == '/contato/' %}nav__link--active{% endif %}">Contact</a>
+    </li>
+  </ul>
+</nav>
