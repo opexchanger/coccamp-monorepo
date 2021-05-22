@@ -14,7 +14,7 @@ function StructureMenuWidget (props) {
   return (
     <div className={styles.root}>
       <div className={styles.header}>
-        <h3 className={styles.title}>Edit your content</h3>
+        <h3 className={styles.title}>Editar o conteúdo do site</h3>
       </div>
 
       <div className={styles.content}>
