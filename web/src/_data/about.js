@@ -8,8 +8,8 @@ function generateHtml(data) {
     aboutTextOne: blocksToHtml({
       blocks: data.aboutTextOne,
       serializers: aboutSerializer,
-      renderContainerOnSingleChild: true,
-      className: "who__text who__text--1",
+      // renderContainerOnSingleChild: true,
+      // className: "who__text who__text--1",
     }),
     aboutTextTwo: blocksToHtml({
       blocks: data.aboutTextTwo,

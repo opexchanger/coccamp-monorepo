@@ -28,7 +28,11 @@
     {% include _header.html %}
 
     <main class="main">
-      <section class="hero hero--products">
+      <section
+        class="hero hero--products"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <div class="container">
           <h1 class="hero__title">{{ productsPage.heroText.title }}</h1>
           <p class="hero__subtitle">{{ productsPage.heroText.subtitle }}</p>
@@ -188,11 +192,16 @@
               <div class="swiper-pagination swiper-pag-products"></div>
             </div>
           </div>
-          <h4 class="products__h4">{{ productsPage.textCta }}</h4>
-          <a href="/contato/#form-section" class="button btn-products"
+          <h4 class="products__h4" data-aos="fade-right">
+            {{ productsPage.textCta }}
+          </h4>
+          <a
+            href="/contato/#form-section"
+            class="button btn-products"
+            data-aos="fade-right"
             >{{ productsPage.textPartner }}</a
           >
-          <a href="/contato/#form-section" class="button"
+          <a href="/contato/#form-section" class="button" data-aos="fade-right"
             >{{ productsPage.textClient }}</a
           >
         </div>

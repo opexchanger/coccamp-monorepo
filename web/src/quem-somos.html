@@ -25,7 +25,11 @@
     {% include _header.html %}
 
     <main class="main">
-      <section class="hero hero--who">
+      <section
+        class="hero hero--who"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <div class="container">
           <h1 class="hero__title">{{ about.heroText.title }}</h1>
           <p class="hero__subtitle">{{ about.heroText.subtitle }}</p>
@@ -40,21 +44,32 @@
       <section id="first-section" class="section who">
         <div class="container">
           <div class="who__box">
-            <div class="who__img who__img--1">
+            <div class="who__img who__img--1" data-aos="fade-right">
               <img src="../img/products.webp" alt="Our products" />
             </div>
-
-            {{ about.aboutTextOne }}
+            <div class="who__text who__text--1" data-aos="fade-left">
+              {{ about.aboutTextOne }}
+            </div>
           </div>
 
           <div class="who__box">
-            <div class="who__img who__img--2 image-box-lg">
+            <div
+              class="who__img who__img--2 image-box-lg"
+              data-aos="fade-left"
+              data-aos-duration="900"
+            >
               <img src="../img/what-grid-1.webp" alt="Our products" />
             </div>
 
-            <div class="who__text who__text--2">
+            <div
+              class="who__text who__text--2"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
               {{ about.aboutTextTwo }}
-              <a class="button who__button" href="#">{{ about.textPartner }}</a>
+              <a class="button who__button" href="/contato/#form-section"
+                >{{ about.textPartner }}</a
+              >
             </div>
           </div>
         </div>

@@ -28,7 +28,11 @@
     {% include _header.html %}
 
     <main class="main">
-      <section class="hero hero--contact">
+      <section
+        class="hero hero--contact"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <div class="container">
           <h1 class="hero__title">{{ contact.heroText.title }}</h1>
           <p class="hero__subtitle">{{ contact.heroText.subtitle }}</p>
@@ -43,8 +47,10 @@
       <section id="first-section" class="section contact">
         <div class="container">
           <div class="contact__flex">
-            {{ contact.contactText }}
-            <div class="contact__img image-box-lg">
+            <div class="contact__text" data-aos="fade-right">
+              {{ contact.contactText }}
+            </div>
+            <div class="contact__img image-box-lg" data-aos="fade-left">
               <img src="../img/contact.jpeg" alt="Contact us" />
             </div>
           </div>
@@ -53,7 +59,7 @@
 
       <section class="section" id="form-section">
         <div class="container">
-          <div class="form__wrapper">
+          <div class="form__wrapper" data-aos="flip-up">
             <h2 class="form__title">{{ contact.formCta }}</h2>
 
             <!--FORM-->

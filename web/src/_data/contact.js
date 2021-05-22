@@ -8,8 +8,6 @@ function generateHtml(data) {
     contactText: blocksToHtml({
       blocks: data.contactText,
       serializers: serializer,
-      renderContainerOnSingleChild: true,
-      className: "contact__text",
     }),
   };
 }
